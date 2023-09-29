@@ -14,10 +14,10 @@ export const NavBar = () => {
                 to="/">Home</NavLink>
             <NavLink 
                 className={({ isActive }) => (isActive ? 'stylesActive' : 'stylesA')}
-                to="/routes">Routers</NavLink>
+                to="/reportes">Reportes</NavLink>
             <NavLink 
                 className={({ isActive }) => (isActive ? 'stylesActive' : 'stylesA')}
-                to="/equipos">Equipos</NavLink>
+                to="/registrar">Registrar</NavLink>
             <NavLink 
                 className={({ isActive }) => (isActive ? 'stylesActive' : 'stylesA')}
                 to="/personal">Personal</NavLink>

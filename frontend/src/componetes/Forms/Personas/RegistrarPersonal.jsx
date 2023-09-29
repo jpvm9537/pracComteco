@@ -93,7 +93,7 @@ export const RegistrarPersonal = () => {
                     <div>
                         <label htmlFor='ci'>Celula de Identidad</label>
                         <input 
-                            className='input_j'
+                            className='stylesInput'
                             type='text'
                             id='ci'
                             name='ci'
@@ -107,7 +107,7 @@ export const RegistrarPersonal = () => {
                     <div>
                         <label htmlFor='nombre'>nombres</label>
                         <input 
-                            className='input_j'
+                            className='stylesInput'
                             type='text'
                             id='nombre'
                             name='nombre'
@@ -121,7 +121,7 @@ export const RegistrarPersonal = () => {
                     <div>
                         <label htmlFor='apellidos'>Apellido Paterno</label>
                         <input 
-                            className='input_j'
+                            className='stylesInput'
                             type='text'
                             id='apellidos'    
                             name='apellidos'
@@ -135,7 +135,7 @@ export const RegistrarPersonal = () => {
                     <div>
                         <label htmlFor='telefono'>Telefono</label>
                         <input 
-                            className='input_j'
+                            className='stylesInput'
                             type='text'
                             id='telefono'
                             name='telefono'
@@ -149,7 +149,7 @@ export const RegistrarPersonal = () => {
                     <div>
                         <label htmlFor='nombre_cargo'>Empleado</label>
                         <select 
-                            className='input_j'
+                            className='stylesInput'
                             type='text' 
                             id='nombre_cargo'
                             name="nombre_cargo"
@@ -163,7 +163,7 @@ export const RegistrarPersonal = () => {
                     <div>
                         <label htmlFor='email'>Correo Electronico</label>
                         <input 
-                            className='input_j'
+                            className='stylesInput'
                             type='text'
                             id='email'
                             name='email'
@@ -175,11 +175,15 @@ export const RegistrarPersonal = () => {
                         {touched.email && errors.email && <div className='styleErrores'>{errors.email}</div>}
                     </div>
                     
-                    <div className="stylesEspacioBotones">
-                        <button  className='stylesButton' type="submit">
+                    <div className="stylesContenedorButton">
+                        <button  className='stylesButoon' type="submit">
                             Guardar
                         </button>
-                        <button className='stylesButton' onClick={ handleClick }>
+                        
+                    </div>
+                    <br />
+                    <div className='stylesContenedorButton'>
+                        <button className='stylesButoon' onClick={ handleClick }>
                             Cancelar
                         </button>
                     </div>

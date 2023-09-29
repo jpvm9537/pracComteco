@@ -3,6 +3,7 @@ import { NavBar } from './componetes/NavBar/NavBar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './vistas/Home/Home';
 import { Personal } from './vistas/Personal/Personal';
+import { Login } from './vistas/Login/Login';
 
 function App() {
 
@@ -10,10 +11,12 @@ function App() {
     <BrowserRouter>
       <NavBar> </NavBar>
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/routes' element={<h1>Routes</h1>}></Route>
-        <Route path='/equipos' element={<h1>Equipos</h1>}></Route>
+        <Route path='/' element={<Login/>}></Route>
+        <Route path='/home' element={<Home/>}></Route>
+        <Route path='/reportes' element={<h1>Reportes</h1>}></Route>
+        <Route path='/registrar' element={<h1>Registrar</h1>}></Route>
         <Route path='/personal' element={<Personal/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
       </Routes>
     </BrowserRouter >
   );
